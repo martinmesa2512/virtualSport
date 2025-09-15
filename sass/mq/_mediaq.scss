@@ -1,0 +1,50 @@
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 900px) {
+  .cards-flex {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 1024px) {
+  .cards-flex {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .bienvenida-cuadro {
+    height: 40vh;
+    margin-top: 70px;
+  }
+
+  .bienvenido-virtuals {
+    font-size: 1.5rem;
+  }
+
+  .index-subtitulo {
+    font-size: 1rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .bienvenida-cuadro {
+    height: 40vh; 
+    background-position: top center; 
+  }
+  .bienvenido-virtuals {
+    font-size: 1.3rem; 
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,61 @@
+/*MAIN CONTENT*/
+main {
+  padding: 0.5rem;
+}
+
+.cards-flex {
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.card-products {
+  color: rgba(255, 255, 255, 0.596);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.788);
+  max-width: 30rem;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  @extend %flexColumn;
+  align-items: center;
+}
+
+.card-products .card-img {
+@include escalasCenter(100%,200px);
+  object-fit: cover;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+}
+
+.card-buttom {
+  width: 50%;
+  margin: 0.5rem auto 0;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: rgba(206, 206, 206, 0.432);
+  color: $colorBlanco;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-buttom:hover {
+  background: #b4b4b4de;
+}
+
+.productos-banner {
+  background-image: url("../img/imagen-products.jpg"); 
+  @extend %backgroundPositions;
+  height: 350px; 
+  @extend %flexColumn;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.productos-banner h1,
+.productos-banner h2 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}

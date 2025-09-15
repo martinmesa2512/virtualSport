@@ -1,0 +1,9 @@
+/*NAVBAR*/
+.logo {
+  @include escalasCenter(auto,5vh);
+  display: block;
+}
+
+.navbar {
+  z-index: 1050;
+}

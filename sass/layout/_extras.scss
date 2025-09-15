@@ -1,0 +1,16 @@
+/*EXTRAS*/
+.img-alt {
+  @include escalasCenter(3rem,3rem)
+}
+
+.background-nos {
+  background-image: url(../img/virtualCard.jpg);
+ @extend %backgroundPositions;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+

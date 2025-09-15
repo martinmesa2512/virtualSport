@@ -1,0 +1,6 @@
+// Mixings
+
+@mixin escalasCenter($ancho,$altura){
+    width: $ancho;
+    height: $altura;
+}

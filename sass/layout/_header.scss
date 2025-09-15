@@ -1,0 +1,47 @@
+/*HEADER*/
+.index-header {
+  background-image: url(../img/bg-web.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bienvenida-cuadro {
+  background-image: url(../img/run.jpg);
+  @extend %backgroundPositions;
+ @include escalasCenter(100%,50vh);
+  margin-top: 70px;
+  box-shadow: 1px 1px 9px $colorNegro;
+}
+
+.bienvenido-virtuals {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.1rem;
+}
+
+/* HEADER PROMOCIONES */
+.promociones-header {
+  background-image: url("../img/bg-web.jpg");
+@extend %backgroundPositions;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* HEAD PROMOCIONES */
+.bienvenida-cuadro {
+  background-image: url("../img/run.jpg"); 
+  @extend %backgroundPositions;
+  @include escalasCenter(100%,60vh);
+  margin-top: 40px;
+  box-shadow: 1px 1px 9px $colorNegro;
+}
+
+.sucursales-banner {
+  background-image: url("../img/sucursalBanner.jpg"); 
+ @extend %backgroundPositions;
+  @include escalasCenter(100%,60vh);
+  margin-top: 70px;
+  box-shadow: 1px 1px 9px $colorNegro;
+}
