@@ -33,16 +33,20 @@ main {
   margin: 0.5rem auto 0;
   padding: 0.5rem;
   border-radius: 0.4rem;
-  background-color: rgba(206, 206, 206, 0.432);
+  background: linear-gradient(57deg, rgba(219, 112, 31, 1) 30%, rgba(237, 83, 83, 1) 82%);
   color: $colorBlanco;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
+
 .card-buttom:hover {
-  background: #b4b4b4de;
+  filter: brightness(1.1);
+  transform: scale(1.05);
 }
+
 
 .productos-banner {
   background-image: url("../img/imagen-products.jpg"); 
@@ -58,4 +62,29 @@ main {
 .productos-banner h1,
 .productos-banner h2 {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+h2.section-title {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, rgba(219,112,31,1) 0%, rgba(237,83,83,1) 100%);
+    margin: 8px auto 0;
+    width: 60%;
+    animation: gradient-move 3s linear infinite;
+  }
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }

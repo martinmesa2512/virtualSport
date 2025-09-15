@@ -90,15 +90,17 @@ main {
   margin: 0.5rem auto 0;
   padding: 0.5rem;
   border-radius: 0.4rem;
-  background-color: rgba(206, 206, 206, 0.432);
+  background: linear-gradient(57deg, rgb(219, 112, 31) 30%, rgb(237, 83, 83) 82%);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-buttom:hover {
-  background: rgba(180, 180, 180, 0.8705882353);
+  filter: brightness(1.1);
+  transform: scale(1.05);
 }
 
 .productos-banner {
@@ -115,6 +117,33 @@ main {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+h2.section-title {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+h2.section-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgb(219, 112, 31) 0%, rgb(237, 83, 83) 100%);
+  margin: 8px auto 0;
+  width: 60%;
+  animation: gradient-move 3s linear infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 /*PRODUCTOS GRID*/
 .productos-grid {
   display: grid;
@@ -239,6 +268,24 @@ main {
 
 .navbar {
   z-index: 1050;
+}
+
+.navbar-toggler {
+  border: none;
+  background: linear-gradient(73deg, rgb(130, 130, 130) 0%, rgb(196, 196, 196) 59%);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
 }
 
 /*BASE*/
