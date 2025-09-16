@@ -67,7 +67,7 @@ main {
 h2.section-title {
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: $colorBlanco;
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
@@ -88,3 +88,17 @@ h2.section-title {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
+.card-img-top {
+  height: 320px; /* Podés subirlo a 350px o más si querés aún más impacto */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0; /* Bordes superiores redondeados opcionales */
+}
+
+.card-img-top {
+  height: 300px; /* Ajusta según necesites */
+  object-fit: cover; /* Para que la imagen no se distorsione */
+}
+
+
+

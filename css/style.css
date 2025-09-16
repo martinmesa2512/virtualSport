@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .productos-banner, .card-products {
   display: flex;
   flex-direction: column;
@@ -144,6 +145,18 @@ h2.section-title::after {
     background-position: 100% 50%;
   }
 }
+.card-img-top {
+  height: 320px; /* Podés subirlo a 350px o más si querés aún más impacto */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0; /* Bordes superiores redondeados opcionales */
+}
+
+.card-img-top {
+  height: 300px; /* Ajusta según necesites */
+  object-fit: cover; /* Para que la imagen no se distorsione */
+}
+
 /*PRODUCTOS GRID*/
 .productos-grid {
   display: grid;
@@ -257,6 +270,20 @@ h2.section-title::after {
   .bienvenido-virtuals {
     font-size: 1.3rem;
     padding: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #promociones .carousel-inner {
+    max-height: 500px;
+    overflow: hidden;
+  }
+  #promociones .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+  }
+  #promociones .carousel-caption {
+    bottom: 20px;
   }
 }
 /*NAVBAR*/

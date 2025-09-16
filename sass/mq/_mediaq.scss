@@ -48,3 +48,20 @@
     padding: 0.5rem;
   }
 }
+
+@media (min-width: 992px) {
+  #promociones .carousel-inner {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  #promociones .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+  }
+
+  #promociones .carousel-caption {
+    bottom: 20px;
+  }
+}
