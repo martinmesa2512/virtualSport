@@ -157,6 +157,20 @@ h2.section-title::after {
   object-fit: cover; /* Para que la imagen no se distorsione */
 }
 
+.card-products {
+  transition: transform 0.3s ease-in-out;
+}
+.card-products:hover {
+  transform: translateY(-10px);
+}
+
+.background-nos {
+  transition: transform 0.3s ease-in-out;
+}
+.background-nos:hover {
+  transform: translateY(-10px);
+}
+
 /*PRODUCTOS GRID*/
 .productos-grid {
   display: grid;
@@ -166,8 +180,28 @@ h2.section-title::after {
   margin: 1rem 1.5rem;
 }
 
+.btn-comprar {
+  background: rgb(225, 225, 225); /* Fondo inicial */
+  color: #fff;
+  border: 2px solid black;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-comprar:hover {
+  background: rgba(174, 174, 174, 0.907); /* Color más claro respecto al fondo */
+  color: #fff;
+}
+
+.productos-grid-gradiente .card {
+  background: linear-gradient(145deg, #c1c1c1, #ffffff);
+}
+
 .card {
-  background: #fff;
+  background: linear-gradient(145deg, #000000, #111111);
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -193,6 +227,22 @@ h2.section-title::after {
   margin-bottom: 0.5rem;
 }
 
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.title-bar::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 100%;
+  background: #ff6600;
+  border-radius: 2px;
+}
+
 .card p {
   font-size: 0.95rem;
   color: #444;
@@ -212,6 +262,17 @@ h2.section-title::after {
 
 .btn-card:hover {
   background: #333;
+}
+
+.product-title h2 {
+  border-left: 6px solid transparent;
+  border-image: linear-gradient(to bottom, #ff7a00, #ff4500);
+  border-image-slice: 1;
+  padding-left: 0.5rem;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /*EXTRAS*/

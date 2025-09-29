@@ -19,6 +19,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.404);
   @extend %flexColumn;
   align-items: center;
+  
 }
 
 .card-products .card-img {
@@ -100,5 +101,18 @@ h2.section-title {
   object-fit: cover; /* Para que la imagen no se distorsione */
 }
 
+.card-products {
+  transition: transform 0.3s ease-in-out;
 
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
 
+.background-nos{
+   transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+}
+}
