@@ -13,4 +13,72 @@
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+/* ANIMACION LOGOS */
+.img-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
 
+.img-hover-lift:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+
+.titulo-animado {
+  animation: softPulse 4s ease-in-out infinite;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+}
+
+.titulo-slash {
+  position: relative;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #fff;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  z-index: 1;
+}
+
+.titulo-slash::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 110%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff4b2be5, #ff0000e1);
+  transform: skew(-15deg);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+
+.titulo-gradient-move {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff4b2b, #ff9100, #ff4b2b);
+  background-size: 200% auto;
+  color: transparent;
+  animation: gradientMove 3s linear infinite;
+  text-transform: uppercase;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
+}

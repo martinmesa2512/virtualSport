@@ -60,6 +60,50 @@ main {
   padding: 2rem;
 }
 
+
+.titulo-ubicacion {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.subrayado-gradiente {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Espacio para el subrayado */
+}
+
+.subrayado-gradiente::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff7e00, #ffa500, #ffc107); /* Gradiente naranja */
+  border-radius: 2px;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+
+
 .productos-banner h1,
 .productos-banner h2 {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
