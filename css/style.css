@@ -380,6 +380,8 @@ h2.section-title::after {
   display: inline-block;
   padding: 0.2em 0.5em;
   z-index: 1;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .titulo-slash::before {
@@ -392,8 +394,6 @@ h2.section-title::after {
   background: linear-gradient(135deg, rgba(255, 75, 43, 0.8980392157), rgba(255, 0, 0, 0.8823529412));
   transform: skew(-15deg);
   z-index: -1;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
 .titulo-gradient-move {

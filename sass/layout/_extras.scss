@@ -40,6 +40,8 @@
   display: inline-block;
   padding: 0.2em 0.5em;
   z-index: 1;
+  overflow: hidden; // ✅ recorta el desborde del ::before
+  border-radius: 4px; // mueve el redondeado al contenedor
 }
 
 .titulo-slash::before {
@@ -52,9 +54,8 @@
   background: linear-gradient(135deg, #ff4b2be5, #ff0000e1);
   transform: skew(-15deg);
   z-index: -1;
-  border-radius: 4px;
-  overflow: hidden;
 }
+
 
 
 
