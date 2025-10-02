@@ -8,7 +8,7 @@
 }
 
 .btn-comprar {
-  background: rgb(225, 225, 225); /* Fondo inicial */
+  background: rgb(225, 225, 225); 
   color: $colorBlanco;
   border: 2px solid black;
   padding: 0.7rem 1.2rem;
@@ -19,17 +19,17 @@
 }
 
 .btn-comprar:hover {
-  background: rgba(174, 174, 174, 0.907); /* Color más claro respecto al fondo */
+  background: rgba(174, 174, 174, 0.907);
   color: $colorBlanco;
 }
 
 .productos-grid-gradiente .card {
-  background: linear-gradient(145deg, #c1c1c1, #ffffff); // gradiente más claro
+  background: linear-gradient(145deg, #c1c1c1, #ffffff); 
 }
 
 
 .card {
-  background: linear-gradient(145deg, #000000, #111111); // un gris claro en lugar de blanco
+  background: linear-gradient(145deg, #000000, #111111); 
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;

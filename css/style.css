@@ -224,7 +224,7 @@ h2.section-title::after {
 }
 
 .btn-comprar {
-  background: rgb(225, 225, 225); /* Fondo inicial */
+  background: rgb(225, 225, 225);
   color: #fff;
   border: 2px solid black;
   padding: 0.7rem 1.2rem;
@@ -235,7 +235,7 @@ h2.section-title::after {
 }
 
 .btn-comprar:hover {
-  background: rgba(174, 174, 174, 0.907); /* Color más claro respecto al fondo */
+  background: rgba(174, 174, 174, 0.907);
   color: #fff;
 }
 
@@ -386,13 +386,14 @@ h2.section-title::after {
   content: "";
   position: absolute;
   top: 0;
-  left: -10px;
-  width: 110%;
+  left: 0;
+  width: 100%;
   height: 100%;
   background: linear-gradient(135deg, rgba(255, 75, 43, 0.8980392157), rgba(255, 0, 0, 0.8823529412));
   transform: skew(-15deg);
   z-index: -1;
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .titulo-gradient-move {
