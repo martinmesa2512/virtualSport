@@ -28,7 +28,7 @@
   animation: softPulse 4s ease-in-out infinite;
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: $colorBlanco;
   position: relative;
 }
 
@@ -36,7 +36,7 @@
   position: relative;
   font-weight: 800;
   font-size: 2rem;
-  color: #fff;
+  color: $colorBlanco;
   display: inline-block;
   padding: 0.2em 0.5em;
   z-index: 1;
